@@ -1,0 +1,200 @@
+:root{
+    --dark-cyan:hsl(158, 36%, 37%);
+    --cream:hsl(30, 38%, 92%);
+    --dark-blue:hsl(212, 21%, 14%);
+    --grayish-blue:hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+    --fs-p:14px;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--cream);
+}
+main{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contianer{
+    background-color: var(--white);
+    position: relative;
+    width:  637px;
+    height: 537px;
+    border-radius: 10px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    top: 171px;
+    right: -2px;
+
+}
+
+
+.contianer .contianer-image .desktop{
+    width: 305px;
+    height: 537px;
+    display: inline;
+    position: absolute;
+    right: 335px;
+    border-radius: 10px 0 0 10px;
+}
+
+.contianer .contianer-image .mobile{
+    display: none;
+}
+
+.contianer .contianer-price{
+    margin: 10px;
+    margin-left: 10px;
+    position: relative;
+}
+
+.contianer .contianer-price h4{
+    color: var(--grayish-blue);
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.contianer .contianer-price h1{
+    color: var(--dark-blue);
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.contianer .contianer-price .discribtion {
+    color: var(--grayish-blue);
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    height: 109px;
+    width: 196px;
+    font-weight: 500;
+    line-height: 20px;
+    
+}
+
+.contianer .contianer-price .price{
+    position: relative;
+    bottom: -82px;
+    left: -40px;
+}
+
+.contianer .contianer-price .price .curnt-price{
+    color: var(--dark-cyan);
+    position: relative;
+    left: 37px;
+    top: 9px;
+    font-family: 'Fraunces', serif;
+}
+
+.contianer .contianer-price .discount{
+    display: inline;
+    position: relative;
+    left: 198px;
+    bottom: 27px;
+    color: var(--grayish-blue);
+    text-decoration-line: line-through;
+}
+
+.contianer .contianer-price .btn{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 57px;
+    padding-right:57px;
+    position: relative;
+    left: 16px;
+    bottom: -95px;
+    background-color: var(--dark-cyan);
+    color: var(--white);
+    font-weight: 700;
+    font-size: medium;
+    border:none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contianer .contianer-price .btn span{
+    margin-right: 10px;
+}
+
+
+
+@media screen and (max-width:375px) {
+    .contianer{
+        background-color: var(--white);
+        position: relative;
+        width: 330px;
+        height: 678px;
+        border-radius: 10px;
+    
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        top: 171px;
+        right: -2px;
+        padding: 10px;
+    }
+    .contianer .contianer-price .discribtion{
+        position: relative;
+        margin-left: 10px;
+    }
+    .contianer .contianer-price .name{
+        position: relative;
+        margin-left: 10px;
+    }
+    
+    .contianer .contianer-image .mobile{
+        display: inline;
+        position: absolute;
+        top: 0px;
+        width: 330px;
+        height: 250px;
+        top:0;
+        left: 0;
+        border-radius: 10px 10px 0 0;
+
+
+    }
+    .contianer .contianer-price{
+        margin: 10px;
+        margin-left: 10px;
+        position: absolute;
+        top: 250px;
+    
+
+
+
+    }
+
+    .contianer .contianer-price .price{
+        position: relative;
+        top: -10px;
+        margin-left: 10px;
+        }
+
+    .contianer .contianer-price .btn{
+        position: relative;
+        top:0;
+    }
+
+    .contianer .contianer-image .desktop{
+        display: none;
+    }
+}
